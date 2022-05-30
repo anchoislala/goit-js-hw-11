@@ -36,8 +36,8 @@ searchForm.addEventListener('submit', onFormSubmit);
 function onFormSubmit(evt) {
     evt.preventDefault();
 
-    const searchImage = evt.currentTarget.elements.searchQuery.value;
-    
+  const searchImage = evt.currentTarget.elements.searchQuery.value;
+  
     if (searchImage) {
     searchButton.disabled = true;
     loadService.searchQuery = searchImage;
